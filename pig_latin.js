@@ -1,4 +1,5 @@
 'use strict'
+let argv = process.argv
 
 let pigLatin = (word) => {
   let firstLetter = word.charAt(0);
@@ -23,4 +24,10 @@ let convert = (sentence) => {
   return result.join(" ")
 }
 
-// Your CLI code here
+var wordArr = []
+for (let i=2; i<argv.length; i++){
+  wordArr.push(pigLatin(argv[i]))
+}
+//
+var word = wordArr.join(' ')
+console.log(word);
