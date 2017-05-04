@@ -24,18 +24,3 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
-var arrKalimat=[];
-var kalimat=""
-process.argv.forEach((val, index) => {
-  let hasil=[];
-  if(index>1)
-  {
-    arrKalimat.push(val)
-  }
-
-});
-  kalimat=arrKalimat.join(" ")
-
-if(convert(kalimat)==="ay")
-  console.log("Tidak ada Kata/kalimat");
-else console.log(convert(kalimat));
