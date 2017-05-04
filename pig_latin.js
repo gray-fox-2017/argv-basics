@@ -24,3 +24,5 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+console.log(`${process.argv[2]} ${process.argv[3]}`);
+console.log(`${pigLatin(process.argv[2])} ${pigLatin(process.argv[3])}`);
