@@ -36,6 +36,7 @@ process.argv.forEach((val, index) => {
 });
   kalimat=arrKalimat.join(" ")
 
+var argv=process.argv
 if(convert(kalimat)==="ay")
   console.log("Tidak ada Kata/kalimat");
 else console.log(convert(kalimat));
