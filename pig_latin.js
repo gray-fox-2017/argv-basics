@@ -24,3 +24,10 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+// console.log(process.argv);
+
+
+let all_argv = process.argv;
+let input_str = all_argv.filter((x)=> x.startsWith('/') === false).join(' ');
+
+console.log(convert(input_str));
