@@ -26,4 +26,7 @@ let convert = (sentence) => {
 // console.log(convert('makan ayam'))
 // Your CLI code here
 
-console.log(convert(process.argv.slice(2).join(' ')))
+let argv = process.argv
+let myString = argv.slice(2).join(' ')
+let conversion = convert(myString)
+console.log(conversion)
