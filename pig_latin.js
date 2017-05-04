@@ -24,6 +24,7 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
-let input = process.argv[2].split(' ');
+let masuk = process.argv.splice(2, process.argv.length)
+// let input = ;
 
-console.log(input.map( x => pigLatin(x)).join(' '));
+console.log(masuk.map( x => pigLatin(x)).join(' '));
