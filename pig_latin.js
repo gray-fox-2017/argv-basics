@@ -24,3 +24,10 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+let words = "";
+process.argv.forEach((sentence, index) => {
+  if(index >= 2) {
+    words += sentence + ' '
+  }
+})
+console.log(convert(words));
