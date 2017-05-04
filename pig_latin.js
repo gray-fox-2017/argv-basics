@@ -24,3 +24,15 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
+let input = process.argv
+// console.log(convert(input.slice(2).join(' ')));
+let words = ' ';
+input.forEach((value, index) => {
+  if(index >= 2) {
+    words += value + " "
+  }
+});
+console.log(convert(words));
+
+
+//node pig_latin.js ayam bakar
