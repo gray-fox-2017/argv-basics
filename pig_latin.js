@@ -39,3 +39,4 @@ process.argv.forEach((val, index) => {
 if(convert(kalimat)==="ay")
   console.log("Tidak ada Kata/kalimat");
 else console.log(convert(kalimat));
+///biar bisa pull
