@@ -23,10 +23,11 @@ let convert = (sentence) => {
   return result.join(" ")
 }
 
-let cli = process.argv;
-let input = [];
-for (let i=2; i<cli.length; i++) {
-  input.push(cli[i]);
-}
+//let cli = process.argv;
+//let input = [];
+//for (let i=2; i<cli.length; i++) {
+//  input.push(cli[i]);
+//}
 
-console.log(convert(input.join(" ")));
+//console.log(convert(input.join(" ")));
+console.log(convert(process.argv.slice(2).join(" ")));
