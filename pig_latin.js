@@ -15,12 +15,17 @@ let isPowel = (char) => {
 
 let convert = (sentence) => {
   let result = []
+  if(sentence === undefined){
+    console.log("Sentance is null")
+  }
+  else{
   let words = sentence.trim().split(/\s+/g)
   for (let i=0;i<words.length;i++) {
     result[i] = pigLatin(words[i])
   }
 
   return result.join(" ")
+}
 }
 
 // Your CLI code here
