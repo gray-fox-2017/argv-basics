@@ -24,5 +24,13 @@ let convert = (sentence) => {
 }
 
 // Your CLI code here
-console.log(`${process.argv[2]} ${process.argv[3]}`);
-console.log(`${pigLatin(process.argv[2])} ${pigLatin(process.argv[3])}`);
+// console.log(`${process.argv[2]} ${process.argv[3]}`);
+let hasil = [];
+let argv = process.argv.slice(2)
+for (var i = 0; i < argv.length; i++) {
+  hasil.push(pigLatin(argv[i]));
+  // console.log(agrv[i]);
+}
+// console.log(argv);
+
+console.log(hasil.join(' '));
